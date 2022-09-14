@@ -41,6 +41,9 @@
     .photo-hidden {
         display: none;
     }
+    .shashlik {
+        height: 560px;
+    }
     .dishes {
         background-color: #fff;
     }
@@ -80,7 +83,7 @@
     }
     
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1180px) {
     h2.title {
         font-size: 80px;
     }
@@ -96,6 +99,12 @@
         grid-template-columns: repeat(2, 308px);
         width: 616px;
     }
+    .menu {
+        background: #eee;
+      }
+    .menu::before {
+        z-index: -1;
+    }  
     .las-data {
         order: 0;
     }

@@ -161,6 +161,9 @@ img {
   background: #666 url('../img/intro/intro_bg.jpg') center no-repeat;
   background-size: cover;
 }
+.intro__logo {
+  padding: 0 40px;
+}
 .intro__title {
   font-weight: 500;
   font-size: 93px;
