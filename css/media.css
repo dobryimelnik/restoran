@@ -1,0 +1,123 @@
+@media screen and (max-width: 1500px) {
+    .intro__title  {
+        font-size: 50px;
+    }
+    .signup {
+        padding: 100px 0;
+    }
+    .signup__title {
+        font-size: 31px;
+    }
+    .specialities {
+        height: auto;
+    }
+    .about {
+        padding: 110px 0;
+        background-color: #fff
+    }
+    .about__btn {
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 6px 20px;
+        margin: 20px auto;
+    } 
+    .about__inner {
+        border-radius: 0;
+        box-shadow: none;
+        grid-template-columns: 700px;
+        margin: 30px auto;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .about__title {
+        font-size: 70px;
+    }
+    .about__subtitle {
+        font-size: 16px;
+        line-height: 1.2;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .photo-hidden {
+        display: none;
+    }
+    .dishes {
+        background-color: #fff;
+    }
+    .dishes__inner {
+        grid-template-columns: repeat(3, 308px);
+        width: 932px;
+        margin: 50px auto 100px;
+        transform: scale(1);
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .las-data {
+        order: 0;
+    }
+    .piz-img {
+        order: 1;
+        border-radius: 0;
+    }
+    .idl-data {
+        order: 2;
+    }
+    .las-img {
+        order: 3;
+    }
+    .piz-data {
+        order: 4;
+    }
+    .idl-img {
+        order: 5;
+        border-radius: 0;
+    }
+    .bur-data {
+        order: 6;
+    }
+    .bur-img {
+        order: 7;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    h2.title {
+        font-size: 80px;
+    }
+    h2.title::after {
+        width: 80px;
+        height: 4px;
+    }
+
+    .specialities__title  {
+        font-size: 120px;
+    }
+    .dishes__inner {
+        grid-template-columns: repeat(2, 308px);
+        width: 616px;
+    }
+    .las-data {
+        order: 0;
+    }
+    .piz-img {
+        order: 2;
+    }
+    .idl-data {
+        order: 4;
+    }
+    .las-img {
+        order: 1;
+    }
+    .piz-data {
+        order: 3;
+    }
+    .idl-img {
+        order: 5;
+    }
+    .bur-data {
+        order: 7;
+    }
+    .bur-img {
+        order: 6;
+    }
+}

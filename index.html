@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/media.css"> 
     <title>Laibas</title>
 </head>
 <body>
@@ -15,19 +16,19 @@
         <nav class="header__nav">
             <ul class="header__nav__list">
                 <li class="header__list__item">
-                    <a href="#!" class="header__nav__link">Shop</a>
+                    <a href="#home" class="header__nav__link nav__link">Home</a>
                 </li>
                 <li class="header__list__item">
-                    <a href="#!" class="header__nav__link">Recipies</a>
+                    <a href="#about" class="header__nav__link nav__link">About</a>
                 </li>
                 <li class="header__list__item">
-                    <a href="#!" class="header__nav__link">News</a>
+                    <a href="#our_menu" class="header__nav__link nav__link">Menu</a>
                 </li>
                 <li class="header__list__item">
-                    <a href="#!" class="header__nav__link">About Laiba's</a>
+                    <a href="#dishes" class="header__nav__link nav__link">Dishes</a>
                 </li>
                 <li class="header__list__item">
-                    <a href="#!" class="header__nav__link">Contact</a>
+                    <a href="#locations" class="header__nav__link nav__link">Locations</a>
                 </li>
             </ul>
             <!-- /header__nav__list -->
@@ -36,12 +37,12 @@
     </header>
     <!-- /header -->
     <main class="main">
-        <div class="intro">
+        <div class="intro" id="home">
             <img src="./img/logo/Laibas_intro.png" alt="Laiba's" class="intro__logo">
             <h1 class="intro__title">Restaurant & Bar</h1>
         </div>
         <!-- /intro -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <div class="about__inner">
                     <div class="about__item">
@@ -50,13 +51,9 @@
                         <button class="about__btn">Book a table</button>
                     </div>
                     <!-- /about__item 1 -->
-                    <div class="about__item">
-                        <img src="./img/intro_2/photo-1.jpg" alt="Resewations" class="about__photo">
-                    </div>
+                    <img src="./img/intro_2/photo-1.jpg" alt="Resewations" class="about__item about__photo">                    
                     <!-- /about__item 2 -->
-                    <div class="about__item">
-                        <img src="./img/intro_2/photo-2.jpg" alt="About" class="about__photo">
-                    </div>
+                    <img src="./img/intro_2/photo-2.jpg" alt="About" class="about__item photo-hidden about__photo">
                     <!-- /about__item 3 -->
                     <div class="about__item">
                         <h3 class="about__title">About</h3>
@@ -70,48 +67,40 @@
         </section>
         <!-- /about -->
 
-        <section class="specialities">
+        <section class="specialities" id="dishes">
              <h2 class="specialities__title">Our <br> Specialities</h2>
         </section>
         <!-- /specialities -->
         <section class="dishes">
             <div class="wrapper">
                 <div class="dishes__inner">
-                    <div class="dishes__item">
+                    <div class="dishes__item las-data">
                         <h3 class="dishes__title">Lasagna</h3>
                         <p class="dishes__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequuntur molestiae dolor.</p>
                         <p class="dishes__price">from &#8377; 200</p>
                     </div>
                     <!-- /dishes__item 1 -->
-                    <div class="dishes__item">
-                        <img src="./img/specialities/photo_1.jpg" alt="Lasagna" class="dishes__photo">
-                    </div>
+                    <img src="./img/specialities/photo_1.jpg" alt="Lasagna" class="dishes__item las-img dishes__photo">                    
                     <!-- /dishes__item 2 -->
-                    <div class="dishes__item">
+                    <div class="dishes__item piz-data">
                         <h3 class="dishes__title">Pizza</h3>
                         <p class="dishes__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequuntur molestiae dolor.</p>
                         <p class="dishes__price">from &#8377; 399</p>
                     </div>
                     <!-- /dishes__item 3 -->
-                    <div class="dishes__item">
-                        <img src="./img/specialities/photo_2.jpg" alt="Pizza" class="dishes__photo">
-                    </div>
+                    <img src="./img/specialities/photo_2.jpg" alt="Pizza" class="dishes__item piz-img dishes__photo">                    
                     <!-- /dishes__item 4 -->
-                    <div class="dishes__item">
-                        <img src="./img/specialities/photo_3.jpg" alt="Idlis" class="dishes__photo">
-                    </div>
+                    <img src="./img/specialities/photo_3.jpg" alt="Idlis" class="dishes__item idl-img dishes__photo">                    
                     <!-- /dishes__item 5 -->
-                    <div class="dishes__item">
+                    <div class="dishes__item idl-data">
                         <h3 class="dishes__title">Idlis</h3>
                         <p class="dishes__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequuntur molestiae dolor.</p>
                         <p class="dishes__price">from &#8377; 99</p>
                     </div>
                     <!-- /dishes__item 6 -->
-                    <div class="dishes__item">
-                        <img src="./img/specialities/photo_4.jpg" alt="Burger" class="dishes__photo">
-                    </div>
+                    <img src="./img/specialities/photo_4.jpg" alt="Burger" class="dishes__item bur-img dishes__photo">
                     <!-- /dishes__item 7 -->
-                    <div class="dishes__item">
+                    <div class="dishes__item bur-data">
                         <h3 class="dishes__title">Burger</h3>
                         <p class="dishes__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequuntur molestiae dolor.</p>
                         <p class="dishes__price">from &#8377; 129</p>
@@ -124,9 +113,9 @@
         </section>
         <!-- /dishes -->
         <div class="shashlik"></div>
-        <!-- /shashlik -->
+        <!-- /shashlik -->         
 
-        <section class="menu">
+        <section class="menu" id="our_menu">
             <div class="wrapper">
                 <h2 class="title menu__title">Menu</h2>
                 <div class="menu__chapter">
@@ -247,7 +236,7 @@
             <!-- /wrapper -->
         </section>
         <!-- /menu -->
-        <section class="locations">
+        <section class="locations" id="locations">
             <div class="wrapper">
                 <div class="locations__inner">
                     <h2 class="title locations__title">Locations</h2>
@@ -318,19 +307,19 @@
             <nav class="footer__nav">
                 <ul class="footer__nav__list">
                     <li class="footer__nav__item">
-                        <a href="#!" class="footer__nav__link">Home</a>
+                        <a href="#home" class="footer__nav__link nav__link">Home</a>
                     </li>
                     <li class="footer__nav__item">
-                        <a href="#!" class="footer__nav__link">Menu</a>
+                        <a href="#our_menu" class="footer__nav__link nav__link">Menu</a>
                     </li>
                     <li class="footer__nav__item">
-                        <a href="#!" class="footer__nav__link">Story</a>
+                        <a href="#dishes" class="footer__nav__link nav__link">Dishes</a>
                     </li>
                     <li class="footer__nav__item">
-                        <a href="#!" class="footer__nav__link">About</a>
+                        <a href="#about" class="footer__nav__link nav__link">About</a>
                     </li>
                     <li class="footer__nav__item">
-                        <a href="#!" class="footer__nav__link">Locations</a>
+                        <a href="#locations" class="footer__nav__link nav__link">Locations</a>
                     </li>
                 </ul>
                 <!-- /footer__nav__list -->
@@ -348,5 +337,7 @@
         
     </footer>
     <!-- /footer -->
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
