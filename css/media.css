@@ -161,8 +161,9 @@
         width: 616px;
     }
     .menu {
-        background: #eee;
-      }
+        background: #666 url('../img/menu/bg-menu2.jpg') repeat;
+        background-size: auto;
+      } 
     .menu::before {
         z-index: -1;
     }  
