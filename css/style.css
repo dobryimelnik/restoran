@@ -171,6 +171,7 @@ img {
   color: #fff;
   text-transform: uppercase;
   margin-top: 20px;
+  text-align: center;
 }
 /* about */
 .about {
@@ -369,11 +370,11 @@ h2.title::after {
   font-size: 17px;
   color: #494949;
 }
-.menu__item__prise {
+.menu__item__price {
   font-size: 35px;
   color: #fc4263;
 }
-.menu__item__prise>b {
+.menu__item__price>b {
   font-weight: 700;
   font-size: 50px;
 }
