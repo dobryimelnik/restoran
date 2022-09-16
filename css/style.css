@@ -106,7 +106,7 @@ img {
 /* header */
 .header {
   background-color: rgba(0, 0, 0, .5);
-  padding: 40px 60px;
+  padding: 14px 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -278,6 +278,7 @@ img {
   border-radius: 5px;
   display: block;
   margin: 20px auto 0; 
+  cursor: pointer;
   transition: background-color .2s ease-in; 
 }
 .about__btn:hover {
@@ -443,6 +444,11 @@ h2.title::after {
 .menu__item__price {
   font-size: 35px;
   color: #fc4263;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items:baseline;
+  column-gap: 3px;
 }
 .menu__item__price>b {
   font-weight: 700;

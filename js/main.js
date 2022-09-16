@@ -13,4 +13,3 @@ newArray.forEach(link => {
     })
 })
 
-console.log("1");

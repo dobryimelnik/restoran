@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"> 
     <link rel="stylesheet" href="css/media.css"> 
+    <link rel="stylesheet" href="css/modal.css"> 
     <title>Laibas</title>
 </head>
 <body>
@@ -59,7 +60,7 @@
                     <div class="about__item">
                         <h3 class="about__title">Reservations</h3>
                         <p class="about__subtitle">Call us now to book a tale in our restaurant. Calls must be in the same days as the reservation</p>
-                        <button class="about__btn">Book a table</button>
+                        <button class="about__btn booking">Book a table</button>
                     </div>
                     <!-- /about__item 1 -->
                     <img src="./img/intro_2/photo-1.jpg" alt="Resewations" class="about__item about__photo">                    
@@ -120,7 +121,7 @@
                     <div class="dishes__item dishes__hidden">
                         <h3 class="dishes__title">Reservations</h3>
                         <p class="dishes__descr">Call us now to book a tale in our restaurant. Calls must be in the same days as the reservation</p>
-                        <button class="about__btn">Book a table</button>
+                        <button class="about__btn booking">Book a table</button>
                     </div>
                 </div>
                 <!-- /dishes__inner -->
@@ -353,8 +354,30 @@
         
     </footer>
     <!-- /footer -->
-
+    <div class="modal modal__hidden">
+		<div class="overlay"></div>
+		<div class="modal-wrapper">
+            <h2 class="modal__title">
+                Leave Your order
+            </h2>
+			<p class="modal__descr">
+				Leave your phone number so that we can contact you about your order.
+			</p>
+			<button type="button" class="modal__close" aria-label="закрыть модальное окно">
+			</button>
+			<form class="form modal__form">
+                <div class="modal__data">
+                    <input type="text" name="name" class="input modal__input" placeholder="Your name">
+				    <input type="tel" name="phone" class="input modal__input" placeholder="Enter your phone number">	
+                    <button type="submit" class="btn modal__button about__btn" >Book a table</button>			
+                </div>
+			</form>
+			<!-- /.form modal__form -->
+		</div>
+	</div>
+	<!-- /modal -->
     <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/burger.js"></script>
 </body>
 </html>

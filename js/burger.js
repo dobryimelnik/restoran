@@ -13,8 +13,8 @@ burgerCloseItem.addEventListener('click', () => {
     menu.classList.remove('header__nav_active');
     burgerItem.classList.remove('burger__hidden');
 });
-for (let i = 0; i <= menuLinks.length; i++) {
-    menuLinks[i].addEventListener('click', () => {
+for (let link of menuLinks) {
+    link.addEventListener('click', () => {
         menu.classList.remove('header__nav_active');
         burgerItem.classList.remove('burger__hidden'); 
     });
