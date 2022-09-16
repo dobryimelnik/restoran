@@ -3,7 +3,6 @@ const modal = document.querySelector('.modal');// модальное окно с
 
 for(let modalBtn of modalBtns) {
     modalBtn.addEventListener('click', () => {
-        console.log('hello');
         modal.classList.remove('modal__hidden');
     })
     modal.addEventListener('click', (event) => {
