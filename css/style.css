@@ -270,15 +270,23 @@ img {
   color: #fc4263;
   background-color: #fff; 
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
   letter-spacing: 3px;
   padding: 14px 42px;
-  border: 1px solid #fc4263;
+  border: 2px solid #fc4263;
   border-radius: 5px;
   display: block;
   margin: 20px auto 0; 
-
+  transition: background-color .2s ease-in; 
+}
+.about__btn:hover {
+  background-color: #fe6783;
+  color: #fff;
+}
+.about__btn:active {
+  position: relative;
+  top: 1px;
 }
 /* specialities */
 .specialities {
@@ -338,6 +346,9 @@ img {
   color:#fc4263;
   text-align: center;
   text-transform: uppercase;
+}
+.dishes__hidden {
+  display: none;
 }
 /* shashlik */
 .shashlik {
